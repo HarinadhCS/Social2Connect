@@ -1,0 +1,42 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    background-color: blue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Make the navbar stay at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure it spans the entire width of the page */
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+  
+  .navbar-title {
+    color: white;
+    margin-left: 1rem;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 7rem;
+  }
+  
+  .navbar-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar-links li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Add margin to the rest of the content to avoid overlap with the fixed navbar */
+  body {
+    padding-top: 60px; /* Adjust this based on the height of your navbar */
+  }
+  
